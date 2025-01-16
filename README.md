@@ -7,7 +7,7 @@ ls -l cpptest_results.clog
 cpptestcov compute -map=.cpptest/cpptestcc -clog=cpptest_results.clog -coverage="LC,SC,BC,DC,SCC,MCDC,FC,CC" -out=outdir
 ls -l outdir/
 cpptestcov report html outdir/
-firefox coverage.html
+firefox coverage.html 2>/dev/null
 ```
 ### demo2
 ```
@@ -21,6 +21,7 @@ build/main
 cpptestcov compute -map=build/cpptest-coverage/main/.cpptest/cpptestcc -clog=build/cpptest-coverage/main/main.clog -coverage="LC,SC,BC,DC,SCC,MCDC,FC,CC" -out=outdir
 ls -l outdir/
 cpptestcov report html outdir/
+firefox coverage.html 2>/dev/null
 ```
 
 
