@@ -25,4 +25,5 @@ firefox coverage.html 2>/dev/null
 ```
 
 
-https://www.youtube.com/watch?v=epgsssq8vXc
+- https://www.youtube.com/watch?v=epgsssq8vXc
+- https://asciinema.org/a/HlW8PPLnnGyyPxEWbheQdZOwl
