@@ -3,7 +3,7 @@ main: main.c
 	gcc -o main main.c
 
 main1:
-	cmake -B runtime -S /opt/parasoft/cpptest_ct-2024.1.0-linux.x86_64/runtime
+	cmake -B runtime -S $(CPPTEST_HOME)/runtime
 	cmake --build runtime
 	cpptestcc -compiler gcc_13-64 \
         -line-coverage \
@@ -40,7 +40,7 @@ main2: runtime
         gcc -o main2 main.c -Wl,--whole-archive runtime/build/cpptest.o -Wl,--no-whole-archive
 
 runtime:
-	cp -av /opt/parasoft/cpptest_ct-2024.1.0-linux.x86_64/runtime .
+	cp -av $(CPPTEST_HOME)/runtime .
 
 clean:
 	@rm -f main *.o main1 main2
