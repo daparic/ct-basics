@@ -2,6 +2,12 @@ cmake_minimum_required(VERSION 3.10)
 
 project (main)
 
+# Set cross compiler
+set(CMAKE_SYSTEM_NAME Linux)
+set(CMAKE_SYSTEM_PROCESSOR aarch64)
+set(CMAKE_C_COMPILER /opt/linaro/gcc-linaro-7.5.0-2019.12-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-gcc)
+set(CMAKE_CXX_COMPILER /opt/linaro/gcc-linaro-7.5.0-2019.12-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-g++)
+
 if(CPPTEST_COVERAGE)
     include("${CMAKE_CURRENT_LIST_DIR}/cmake/cpptest-coverage.cmake")
 endif()
