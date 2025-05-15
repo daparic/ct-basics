@@ -38,6 +38,6 @@ cpptestcov report html outdir/
 firefox coverage.html 2>/dev/null
 ```
 
-
-- https://www.youtube.com/watch?v=epgsssq8vXc
+- [Native Compile Code Coverage](https://www.youtube.com/watch?v=epgsssq8vXc)
+- [Cross Compile Code Coverage](https://youtu.be/RIhKa1qzmCk?feature=shared)
 - https://asciinema.org/a/HlW8PPLnnGyyPxEWbheQdZOwl
