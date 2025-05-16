@@ -1,0 +1,194 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table.stats {
+    width: 100%;
+    border-collapse: collapse;
+    border: solid 1px #E6EEEE;
+    font-size: smaller;
+    word-wrap: break-word;
+    white-space: normal;
+    table-layout: fixed;
+}
+
+table.code {
+    width: 100%;
+    border-collapse: collapse;
+    border: solid 1px #E6EEEE;
+    font-size: smaller;
+    word-wrap: none;
+    white-space: nowrap;
+    table-layout: auto;
+}
+
+thead {
+    background-color: #ddf0f0;
+}
+
+th.element {
+    width: 40%;
+    cursor: pointer;
+}
+
+th.metric {
+    text-align: right;
+    padding-right: 2px;
+    cursor: pointer;
+}
+
+td {
+    border-right: solid 1px #E6EEEE;
+}
+
+td.stats {
+    text-align: right;
+    padding-right: 2px;
+}
+
+td.function {
+    padding-left: 10px;
+}
+
+td.covna {
+    background-color: #E7EEEE;
+}
+
+td.covlow {
+    background-color: rgb(252, 225, 229);
+}
+
+td.covmed {
+    background-color: rgb(255, 244, 194);
+}
+
+td.covhigh {
+    background-color: rgb(230, 245, 208);
+}
+
+tr {
+    border-bottom: solid 1px #FFFFFF;
+}
+
+tr.totalRow {
+    font-weight: bold;
+    border-top: solid 1px #E6EEEE;
+}
+
+tr:hover {
+    border-bottom: solid 1px #B6BBBB;
+}
+
+a {
+    color: #0b5799;
+    text-decoration: none;
+}
+
+hr {
+    border-color: #E6EEEE;
+    border-width: 1px;
+    border-top: none;
+}
+
+.navigation {
+    font-size: smaller;
+}
+
+.collapseExpand {
+    font-size: x-small;
+    margin-top: 2em;
+    background-color: #ffffff;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+}
+
+.scm {
+    font-size: smaller;
+    text-align: center;
+}
+
+.footdate {
+    font-size: smaller;
+    text-align: center;
+}
+
+.hiddenCodeViewer {
+    display: none;
+}
+
+.codebox {
+    font-size: small;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    margin: 0;
+}
+
+.codeinfo {
+    font-size: small;
+    font-style: italic;
+}
+
+.code {
+    white-space: pre;
+    margin: 0;
+}
+
+.lineNo {
+    text-align: right;
+    background-color: #E7EEEE;
+}
+
+.lineStatus {
+    width: 4px;
+    float: right;
+    background-color: #E7EEEE;
+}
+
+.covered {
+    background-color: rgb(230, 245, 208);
+}
+
+.partiallycovered {
+    background-color: rgb(255, 254, 170);
+}
+
+.notcovered {
+    background-color: rgb(252, 225, 229);
+}
+
+.suppressed {
+    background-color: rgb(236, 236, 255);
+}
+
+.covered-strong {
+    background-color: rgb(26, 177, 34);
+}
+
+.partiallycovered-strong {
+    background-color: rgb(255, 247, 22);
+}
+
+.notcovered-strong {
+    background-color: rgb(228, 94, 114);
+}
+
+.suppressed-strong {
+    background-color: rgb(110, 121, 204);
+}
+
+.annotation {
+    background-color: rgb(255, 250, 240);
+    font-style: italic;
+    white-space: pre;
+    margin: 0;
+}
+
+.a-tgl {
+    cursor: pointer;
+}
+
+.hid-tgl {
+    display: none;
+}
