@@ -1,6 +1,6 @@
 ### Setup PATH for `cpptestcc` & `cpptestcov`
 ```
-export CPPTEST_HOME=/opt/parasoft/cpptest_ct-2024.2.0-linux.x86_64/ # needed by cmake
+export CPPTEST_HOME=/opt/parasoft/cpptest_ct-2025.1.0-linux.x86_64/ # needed by cmake
 export PATH=$CPPTEST_HOME:$CPPTEST_HOME/bin:$PATH
 ```
 
