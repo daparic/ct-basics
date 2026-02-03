@@ -1,0 +1,24 @@
+@echo off
+
+SET OUTPUT_FILE=@CPPTEST_BDF@
+SET PROJECT_NAME=@CPPTEST_PROJECT_NAME@
+SET RUN_ORIG_CMD=@RUN_ORIG_CMD@
+
+rem write bdf header
+echo ------- cpptestscan v.10.7.3.CMAKE ------->> %OUTPUT_FILE%
+echo working_dir=%CD%>> %OUTPUT_FILE%
+echo project_name=%PROJECT_NAME%>> %OUTPUT_FILE%
+
+SET ARGS=%*
+
+rem write bdf args
+:ArgsLoop
+FOR /f "tokens=1,* delims= " %%A IN ("%ARGS%") DO (
+    ECHO arg=%%A>> %OUTPUT_FILE%
+    SET ARGS=%%B
+)
+if not "%ARGS%"=="" goto :ArgsLoop
+
+
+rem Run original command
+for %%A in ("yes" "YES" "true" "TRUE" "on" "ON") do if "%RUN_ORIG_CMD%"==%%A %* && GOTO :eof
